@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Project</title>
+    <script src="https://unpkg.com/react@16.9.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.9.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      #heading {
+        color: pink;
+      }
+
+      .heading {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      let city = 'San Jose';
+
+      ReactDOM.render(
+        // <h1 id="heading">Hello {city}</h1>,
+        // instead of class, CSS class is given by className here
+        <h1 className="heading">Hello {city}</h1>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
